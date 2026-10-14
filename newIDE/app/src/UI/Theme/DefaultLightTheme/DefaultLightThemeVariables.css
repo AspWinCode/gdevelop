@@ -1,0 +1,203 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 11 Mar 2026 06:02:40 GMT
+ */
+
+.DefaultLightTheme {
+  --gdevelop-color-light-blue: #4ab0e4;
+  --gdevelop-color-blue: #2c6bf5;
+  --gdevelop-color-dark-blue: #3c4698;
+  --gdevelop-color-purple: #9100ce;
+  --gdevelop-color-contrast-text: #fff;
+  --gdevelop-color-selection: #4c92ff; /* OS X selection */
+  --gdevelop-classic-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, 'Helvetica Neue', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --gdevelop-modern-font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, 'Helvetica Neue', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --theme-primary-dark: #37238F; /* Palette/Purple/60 */
+  --theme-primary-color: #4F28CD; /* Palette/Purple/50 */
+  --theme-primary-light: #7046EC; /* Palette/Purple/40 */
+  --theme-primary-text-contrast-color: #FAFAFA; /* Palette/Grey/00 */
+  --theme-secondary-dark: #4F28CD; /* Palette/Purple/50 */
+  --theme-secondary-color: #7046EC; /* Palette/Purple/40 */
+  --theme-secondary-light: #9979F1; /* Palette/Purple/30 */
+  --theme-secondary-text-contrast-color: #FAFAFA; /* Palette/Grey/00 */
+  --theme-success-dark: #16CF89; /* Palette/Green/50 */
+  --theme-success-color: #45D9A1; /* Palette/Green/40 */
+  --theme-success-light: #8BE7C4; /* Palette/Green/30 */
+  --theme-success-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-info-dark: #2B8CFF; /* Palette/Blue/50 */
+  --theme-info-color: #6BAFFF; /* Palette/Blue/40 */
+  --theme-info-light: #95C6FF; /* Palette/Blue/30 */
+  --theme-info-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-warning-dark: #FFA929; /* Palette/Yellow/50 */
+  --theme-warning-color: #FFBC57; /* Palette/Yellow/40 */
+  --theme-warning-light: #FFD28F; /* Palette/Yellow/30 */
+  --theme-warning-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-error-dark: #FF5E3B; /* Palette/Red/50 */
+  --theme-error-color: #FF8569; /* Palette/Red/40 */
+  --theme-error-light: #FFA38F; /* Palette/Red/30 */
+  --theme-error-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-premium-teal: #3BF7F4; /* Palette/Teal/40 */
+  --theme-premium-teal-dark: #09F0EC; /* Palette/Teal/50 */
+  --theme-premium-orange: #FFBC57; /* Palette/Yellow/40 */
+  --theme-premium-orange-dark: #FFA929; /* Palette/Yellow/50 */
+  --theme-premium-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-hover-background-color: rgba(0, 0, 0, 0.04);
+  --theme-surface-toolbar-background-color: #FAFAFA; /* Palette/Grey/00 */
+  --theme-surface-window-background-color: #F5F5F7;
+  --theme-surface-canvas-background-color: #FFFFFF;
+  --theme-surface-alternate-canvas-background-color: #F0F0F0;
+  --theme-surface-alternate-canvas-light-background-color: #F6F6F6;
+  --theme-dialog-background-color: #F0F0F0;
+  --theme-dialog-separator-color: #D9D9DE; /* Palette/Grey/20 */
+  --theme-swipeable-drawer-top-bar-pill-color: #7F7F85;
+  --theme-icon-button-selected-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-icon-button-selected-background-color: #DDD1FF;
+  --theme-link-color: #7046EC; /* Palette/Purple/40 */
+  --theme-link-hover-color: #37238F; /* Palette/Purple/60 */
+  --theme-switch-default-thumb-color: #C5C5C9; /* Palette/Grey/30 */
+  --theme-switch-default-track-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-switch-toggled-thumb-color: #4F28CD; /* Palette/Purple/50 */
+  --theme-switch-toggled-track-color: #9979F1; /* Palette/Purple/30 */
+  --theme-switch-disabled-thumb-color: #D9D9DE; /* Palette/Grey/20 */
+  --theme-switch-disabled-track-color: #C5C5C9; /* Palette/Grey/30 */
+  --theme-search-bar-default-background-color: #D9D9DE; /* Palette/Grey/20 */
+  --theme-search-bar-default-text-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-search-bar-hovered-border-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-search-bar-focused-text-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-search-bar-focused-border-color: #1D1D26; /* Palette/Purple/30 */
+  --theme-search-bar-disabled-background-color: #F6F6F6;
+  --theme-search-bar-disabled-text-color: #C5C5C9; /* Palette/Grey/30 */
+  --theme-selection-background-color: #ECE5FF; /* Palette/Purple/10 */
+  --theme-selection-color: #1D1D26; /* Text/Primary */
+  --theme-text-default-color: #1D1D26; /* Palette/Grey/100 - Text/Primary */
+  --theme-text-secondary-color: #494952; /* Palette/Grey/70 - Text/ Secondary */
+  --theme-text-disabled-color: #888888;
+  --theme-text-contrast-color: #515151;
+  --theme-text-highlighted-background-color: rgba(102, 174, 223, 0.3);
+  --theme-message-warning-color: #FFBC57; /* Palette/Yellow/40 */
+  --theme-message-error-color: #FF8569; /* Palette/Red/40 */
+  --theme-message-valid-color: #45D9A1; /* Palette/Green/40 */
+  --theme-message-answer-border-color: #45D9A1; /* Palette/Green/40 */
+  --theme-message-answer-background-color: #E8FAF3; /* Palette/Green/05 */
+  --theme-message-empty-shadow-color: #FFFFFF;
+  --theme-message-hot-background-color: #FF5E3B; /* Palette/Red/50 */
+  --theme-message-hot-color: #1D1D26;
+  --theme-toolbar-separator-color: #cecece;
+  --theme-closable-tabs-default-background-color: #D9D9DE; /* Background/tertiary */
+  --theme-closable-tabs-default-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-closable-tabs-selected-background-color: #FAFAFA; /* Palette/Grey/00 */
+  --theme-closable-tabs-selected-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-closable-tabs-selected-border-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-list-item-hover-background-color: #F6F2FF; /* Palette/Purple/00 */
+  --theme-list-item-group-text-color: rgba(0,0,0,0.54);
+  --theme-list-item-group-text-deprecated-color: rgba(0,0,0,0.30);
+  --theme-list-item-separator-color: #e0e0e0;
+  --theme-list-item-warning-color: #FFBC57; /* Palette/Yellow/40 */
+  --theme-list-item-error-color: #FF8569; /* Palette/Red/40 */
+  --theme-right-icon-color: #111;
+  --theme-palette-black: #6e2a2a;
+  --theme-palette-white: #fff;
+  --theme-image-preview-background-filter: none;
+  --theme-image-preview-border-color: #aaaaaa;
+  --theme-image-preview-frame-border-color: #000000;
+  --theme-drop-indicator-can-drop-color: #4ab0e4;
+  --theme-drop-indicator-cannot-drop-color: #E06C75;
+  --theme-drop-indicator-border-color: #FFFFFF;
+  --theme-home-separator-color: #D9D9DE;
+  --theme-linear-progress-color-complete: #16CF89; /* Palette/Green/50 */
+  --theme-linear-progress-color-incomplete: #FFA929; /* Palette/Yellow/50 */
+  --theme-example-difficulty-color-simple: #00AB6A;
+  --theme-example-difficulty-color-advanced: #FB9600;
+  --theme-example-difficulty-color-expert: #F03F18;
+  --theme-tabs-text-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-tabs-background-color: #D9D9DE; /* Palette/Grey/20 */
+  --theme-tabs-indicator-color: #7046EC; /* Palette/Purple/40 */
+  --theme-tabs-separator-color: #C5C5C9; /* Palette/Grey/30 */
+  --theme-tabs-selected-text-color: #FAFAFA; /* Palette/Grey/00 */
+  --theme-tabs-selected-background-color: #9979F1; /* Palette/Purple/30 */
+  --theme-snackbar-border-color: #D9D9DE;
+  --theme-snackbar-background-color: #F5F5F7;
+  --theme-notification-badge-color: #F03F18;
+  --theme-text-field-active-error: #FF8569; /* Palette/Red/40 */
+  --theme-text-field-active-border-color: #7046EC; /* Palette/Purple/40 */
+  --theme-text-field-active-caret-color: #9979F1; /* Palette/Purple/30 */
+  --theme-text-field-disabled-color: #A6A6AB; /* Palette/Grey/40 */
+  --theme-text-field-placeholder-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-text-field-default-background-color: #D9D9DE; /* Palette/Grey/20 */
+  --theme-text-field-default-error: #FF5E3B; /* Palette/Red/50 */
+  --theme-text-field-hover-border-color: #A6A6AB; /* Palette/Grey/40 */
+  --theme-text-field-end-adornment-icon-background-color: rgba(79, 40, 205, 0.16);
+  --theme-toggle-field-default-slider-color: #EBEBED; /* Palette/Grey/10 */
+  --theme-toggle-field-default-background-color: #606166; /* Palette/Grey/60 */
+  --theme-toggle-field-active-slider-color: #5028cc; /* Palette/Purple/50 */
+  --theme-toggle-field-active-background-color: #9979f1; /* Palette/Purple/30 */
+  --theme-toggle-field-disabled-slider-color: #A6A6AB; /* Palette/Grey/40 */
+  --theme-toggle-field-disabled-background-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-toggle-field-hover-slider-aura-color: rgba(197, 197, 201, 0.30); /* Palette/Grey/30 and alpha */
+  --input-border-bottom-color: #BBBBBB;
+  --event-sheet-event-tree-background-color: #f0f0f2;
+  --event-sheet-rst-ai-generated-event-move-handle-gradient-color-1: #9932cc;
+  --event-sheet-rst-ai-generated-event-move-handle-gradient-color-2: #fa7ff1;
+  --event-sheet-rst-ai-generated-event-move-handle-gradient-color-3: #9932cc;
+  --event-sheet-rst-move-handle-background-color: #d5d5d5;
+  --event-sheet-rst-move-handle-hover-background-color: #b6b6b6;
+  --event-sheet-rst-line-background-color: black;
+  --event-sheet-rst-row-contents-background-color: #f0f0f2;
+  --event-sheet-rst-row-contents-color: black;
+  --event-sheet-selectable-background-color: rgba(0, 0, 0, 0.1);
+  --event-sheet-selectable-border: 1px #f0f0f2 solid;
+  --event-sheet-selectable-selected-border: 1px #4ab0e4 solid;
+  --event-sheet-conditions-background-color: #f1f2f2;
+  --event-sheet-conditions-border-color: #e2e2e2;
+  --event-sheet-conditions-border: 1px solid #e2e2e2;
+  --event-sheet-conditions-color: black;
+  --event-sheet-conditions-border-right-color: #e2e2e2;
+  --event-sheet-conditions-border-bottom-color: #e2e2e2;
+  --event-sheet-events-highlighted-background-color: #f1e0f9;
+  --event-sheet-events-highlighted-color: #9100ce;
+  --event-sheet-actions-background-color: #FFFFFF;
+  --event-sheet-actions-color: black;
+  --event-sheet-sub-instructions-border-color: #d3d3d3;
+  --event-sheet-sub-instructions-border: 1px solid #d3d3d3;
+  --event-sheet-warning-instruction-background-color: rgba(255, 188, 87, 0.125); /* Palette/Yellow/40 and alpha */
+  --event-sheet-instruction-parameter-base-color: rgb(78, 78, 78);
+  --event-sheet-instruction-parameter-number-color: rgb(27, 143, 1);
+  --event-sheet-instruction-parameter-object-color: #3c4698;
+  --event-sheet-instruction-parameter-behavior-color: rgb(119, 119, 119);
+  --event-sheet-instruction-parameter-operator-color: rgb(55, 131, 211);
+  --event-sheet-instruction-parameter-var-color: rgb(131, 55, 162);
+  --event-sheet-instruction-parameter-error-color: #E06C75;
+  --event-sheet-instruction-parameter-error-background-color: #E06C7544;
+  --event-sheet-instruction-parameter-warning-color: #E5C07B;
+  --event-sheet-drop-indicator-can-drop-border-top-color: black;
+  --event-sheet-drop-indicator-cannot-drop-border-top-color: #E06C75;
+  --event-sheet-link-container-background-color: #f1f2f2;
+  --event-sheet-link-container-color: black;
+  --event-sheet-link-selectable-link-color: #3c4698;
+  --markdown-blockquote-border-left-color: rgba(0, 0, 0, 0.6);
+  --markdown-link-color: #7046EC; /* Palette/Purple/30 */
+  --sound-player-play-button-primary-border-color: #7046EC;
+  --sound-player-play-button-primary-background-color: #7046EC;
+  --sound-player-play-button-primary-color: #F5F5F7;
+  --sound-player-play-button-primary-hover-background-color: #4F28CD;
+  --sound-player-play-button-primary-hover-border-color: #4F28CD;
+  --sound-player-play-button-secondary-border-color: #7046EC;
+  --sound-player-play-button-secondary-background-color: #D9D9DE;
+  --sound-player-play-button-secondary-color: #1D1D26;
+  --sound-player-play-button-secondary-hover-background-color: #F5F5F7;
+  --sound-player-play-button-secondary-hover-border-color: #7046EC;
+  --sound-player-wave-color: #9979F1;
+  --sound-player-progress-color: #7046EC;
+  --mosaic-title-color: #1D1D26; /* Palette/Grey/100 */
+  --mosaic-layout-border-color: #bbbbbb;
+  --mosaic-layout-background-color: #FAFAFA; /* Palette/Grey/00 */
+  --mosaic-toolbar-background-color: #C5C5C9; /* Palette/Grey/30 */
+  --mosaic-toolbar-border-color-hover: #efefef;
+  --table-border-color: #e0e0e0;
+  --table-text-color: black;
+  --table-text-color-header: rgb(158, 158, 158);
+  --table-row-odd-background-color: #fafafa;
+  --table-row-even-background-color: #FFFFFF;
+  --table-row-selected-background-color: #4c92ff;
+  --table-row-selected-color: #FFFFFF;
+}

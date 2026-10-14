@@ -1,0 +1,203 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 11 Mar 2026 06:02:40 GMT
+ */
+
+.DefaultDarkTheme {
+  --gdevelop-color-light-blue: #4ab0e4;
+  --gdevelop-color-blue: #2c6bf5;
+  --gdevelop-color-dark-blue: #3c4698;
+  --gdevelop-color-purple: #9100ce;
+  --gdevelop-color-contrast-text: #fff;
+  --gdevelop-color-selection: #4c92ff; /* OS X selection */
+  --gdevelop-classic-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, 'Helvetica Neue', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --gdevelop-modern-font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, 'Helvetica Neue', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --theme-primary-dark: #37238F; /* Palette/Purple/60 */
+  --theme-primary-color: #4F28CD; /* Palette/Purple/50 */
+  --theme-primary-light: #7046EC; /* Palette/Purple/40 */
+  --theme-primary-text-contrast-color: #FAFAFA; /* Palette/Grey/00 */
+  --theme-secondary-dark: #DDD1FF; /* Palette/Purple/10 */
+  --theme-secondary-color: #EAE3FF; /* Palette/Purple/05 */
+  --theme-secondary-light: #F6F2FF; /* Palette/Purple/00 */
+  --theme-secondary-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-success-dark: #16CF89; /* Palette/Green/50 */
+  --theme-success-color: #45D9A1; /* Palette/Green/40 */
+  --theme-success-light: #8BE7C4; /* Palette/Green/30 */
+  --theme-success-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-info-dark: #2B8CFF; /* Palette/Blue/50 */
+  --theme-info-color: #6BAFFF; /* Palette/Blue/40 */
+  --theme-info-light: #95C6FF; /* Palette/Blue/30 */
+  --theme-info-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-warning-dark: #FFA929; /* Palette/Yellow/50 */
+  --theme-warning-color: #FFBC57; /* Palette/Yellow/40 */
+  --theme-warning-light: #FFD28F; /* Palette/Yellow/30 */
+  --theme-warning-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-error-dark: #FF5E3B; /* Palette/Red/50 */
+  --theme-error-color: #FF8569; /* Palette/Red/40 */
+  --theme-error-light: #FFA38F; /* Palette/Red/30 */
+  --theme-error-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-premium-teal: #3BF7F4; /* Palette/Teal/40 */
+  --theme-premium-teal-dark: #09F0EC; /* Palette/Teal/50 */
+  --theme-premium-orange: #FFBC57; /* Palette/Yellow/40 */
+  --theme-premium-orange-dark: #FFA929; /* Palette/Yellow/50 */
+  --theme-premium-text-contrast-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-hover-background-color: rgba(255, 255, 255, 0.08);
+  --theme-surface-toolbar-background-color: #25252E; /* Palette/Grey/90 */
+  --theme-surface-window-background-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-surface-canvas-background-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-surface-alternate-canvas-background-color: #25252E; /* Palette/Grey/90 */
+  --theme-surface-alternate-canvas-light-background-color: #32323B; /* Palette/Grey/80 */
+  --theme-dialog-background-color: #25252E; /* Palette/Grey/90 */
+  --theme-dialog-separator-color: #494952; /* Palette/Grey/70 */
+  --theme-swipeable-drawer-top-bar-pill-color: #1D1D26;
+  --theme-icon-button-selected-color: #1D1D26; /* Palette/Grey/100 */
+  --theme-icon-button-selected-background-color: #C9B6FC;
+  --theme-link-color: #DDD1FF; /* Palette/Purple/10 */
+  --theme-link-hover-color: #C9B6FC; /* Palette/Purple/20 */
+  --theme-switch-default-thumb-color: #EBEBED; /* Palette/Grey/10 */
+  --theme-switch-default-track-color: #606066; /* Palette/Grey/60 */
+  --theme-switch-toggled-thumb-color: #DDD1FF; /* Palette/Purple/10 */
+  --theme-switch-toggled-track-color: #7046EC; /* Palette/Purple/40 */
+  --theme-switch-disabled-thumb-color: #494952; /* Palette/Grey/70 */
+  --theme-switch-disabled-track-color: #32323B; /* Palette/Grey/80 */
+  --theme-search-bar-default-background-color: #494952; /* Palette/Grey/70 */
+  --theme-search-bar-default-text-color: #C5C5C9; /* Palette/Grey/30 */
+  --theme-search-bar-hovered-border-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-search-bar-focused-text-color: #FAFAFA; /* Palette/Grey/00 */
+  --theme-search-bar-focused-border-color: #F6F2FF; /* Palette/Purple/00 */
+  --theme-search-bar-disabled-background-color: #32323B; /* Palette/Grey/80 */
+  --theme-search-bar-disabled-text-color: #494952; /* Palette/Grey/70 */
+  --theme-selection-background-color: #3E4452;
+  --theme-selection-color: #EAEAEA;
+  --theme-text-default-color: #FAFAFA; /* Palette/Grey/00 - Text/Primary */
+  --theme-text-secondary-color: #C5C5C9; /* Palette/Grey/30 - Text/Secondary */
+  --theme-text-disabled-color: #9AA1AD;
+  --theme-text-contrast-color: #EAEAEA;
+  --theme-text-highlighted-background-color: rgb(214, 222, 236, 0.3);
+  --theme-message-warning-color: #FFBC57; /* Palette/Yellow/40 */
+  --theme-message-error-color: #FF8569; /* Palette/Red/40 */
+  --theme-message-valid-color: #45D9A1; /* Palette/Green/40 */
+  --theme-message-answer-border-color: #08754C; /* Palette/Green/70 */
+  --theme-message-answer-background-color: #04291B; /* Palette/Green/100 */
+  --theme-message-empty-shadow-color: transparent;
+  --theme-message-hot-background-color: #FF5E3B; /* Palette/Red/50 */
+  --theme-message-hot-color: #1D1D26;
+  --theme-toolbar-separator-color: #3E4452;
+  --theme-closable-tabs-default-background-color: #32323B; /* Palette/Grey/80 */
+  --theme-closable-tabs-default-color: #C5C5C9; /* Palette/Grey/30 */
+  --theme-closable-tabs-selected-background-color: #25252E; /* Palette/Grey/90 */
+  --theme-closable-tabs-selected-color: #FAFAFA; /* Palette/Grey/00 */
+  --theme-closable-tabs-selected-border-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-list-item-hover-background-color: #2f2f36;
+  --theme-list-item-group-text-color: #ABB2BF;
+  --theme-list-item-group-text-deprecated-color: #9AA1AD;
+  --theme-list-item-separator-color: #3E4452;
+  --theme-list-item-warning-color: #FFBC57; /* Palette/Yellow/40 */
+  --theme-list-item-error-color: #FF8569; /* Palette/Red/40 */
+  --theme-right-icon-color: #FFFFFF;
+  --theme-palette-black: #6E2A2A;
+  --theme-palette-white: #D6DEEC;
+  --theme-image-preview-background-filter: invert(100%) invert(19%) sepia(26%) saturate(365%) hue-rotate(168deg) brightness(55%) contrast(92%);
+  --theme-image-preview-border-color: #3B3F46;
+  --theme-image-preview-frame-border-color: #D6DEEC;
+  --theme-drop-indicator-can-drop-color: #D6DEEC;
+  --theme-drop-indicator-cannot-drop-color: #E06C75;
+  --theme-drop-indicator-border-color: #21252B;
+  --theme-home-separator-color: #32323B;
+  --theme-linear-progress-color-complete: #16CF89; /* Palette/Green/50 */
+  --theme-linear-progress-color-incomplete: #FFA929; /* Palette/Yellow/50 */
+  --theme-example-difficulty-color-simple: #8BE7C4;
+  --theme-example-difficulty-color-advanced: #FFD28F;
+  --theme-example-difficulty-color-expert: #FFA38F;
+  --theme-tabs-text-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-tabs-background-color: #32323B; /* Palette/Grey/80 */
+  --theme-tabs-indicator-color: #EAE3FF; /* Palette/Purple/05 */
+  --theme-tabs-separator-color: #606066; /* Palette/Grey/60 */
+  --theme-tabs-selected-text-color: #F6F2FF; /* Palette/Purple/00 */
+  --theme-tabs-selected-background-color: #494952; /* Palette/Grey/70 */
+  --theme-snackbar-border-color: #C5C5C9;
+  --theme-snackbar-background-color: #32323B;
+  --theme-notification-badge-color: #FF5E3B;
+  --theme-text-field-active-error: #FFC2B4; /* Palette/Red/20 */
+  --theme-text-field-active-border-color: #DDD1FF; /* Palette/Purple/10 */
+  --theme-text-field-active-caret-color: #C9B6FC; /* Palette/Purple/20 */
+  --theme-text-field-disabled-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-text-field-placeholder-color: #A6A6AB; /* Palette/Grey/40 */
+  --theme-text-field-default-background-color: #32323B; /* Palette/Grey/80 */
+  --theme-text-field-default-error: #FF8569; /* Palette/Red/40 */
+  --theme-text-field-hover-border-color: #7F7F85; /* Palette/Grey/50 */
+  --theme-text-field-end-adornment-icon-background-color: rgba(221, 209, 255, 0.16);
+  --theme-toggle-field-default-slider-color: #EBEBED; /* Palette/Grey/10 */
+  --theme-toggle-field-default-background-color: #606166; /* Palette/Grey/60 */
+  --theme-toggle-field-active-slider-color: #5028cc; /* Palette/Purple/50 */
+  --theme-toggle-field-active-background-color: #9979f1; /* Palette/Purple/30 */
+  --theme-toggle-field-disabled-slider-color: #494952; /* Palette/Grey/70 */
+  --theme-toggle-field-disabled-background-color: #32323b; /* Palette/Grey/80 */
+  --theme-toggle-field-hover-slider-aura-color: rgba(217, 217, 222, 0.30); /* Palette/Grey/20 and alpha */
+  --input-border-bottom-color: #D6DEEC;
+  --event-sheet-event-tree-background-color: #282C34;
+  --event-sheet-rst-ai-generated-event-move-handle-gradient-color-1: #9932cc;
+  --event-sheet-rst-ai-generated-event-move-handle-gradient-color-2: #fa7ff1;
+  --event-sheet-rst-ai-generated-event-move-handle-gradient-color-3: #9932cc;
+  --event-sheet-rst-move-handle-background-color: #3E4452;
+  --event-sheet-rst-move-handle-hover-background-color: #6C7D96;
+  --event-sheet-rst-line-background-color: #ABB2BF;
+  --event-sheet-rst-row-contents-background-color: #282C34;
+  --event-sheet-rst-row-contents-color: #D6DEEC;
+  --event-sheet-selectable-background-color: rgba(0, 0, 0, 0.1);
+  --event-sheet-selectable-border: 1px #282C34 solid;
+  --event-sheet-selectable-selected-border: 1px #4AB0E4 dashed;
+  --event-sheet-conditions-background-color: #3E4452;
+  --event-sheet-conditions-border-color: #3E4452;
+  --event-sheet-conditions-border: 1px #3E4452 solid;
+  --event-sheet-conditions-color: rgb(209, 209, 209);
+  --event-sheet-conditions-border-right-color: #494949;
+  --event-sheet-conditions-border-bottom-color: black;
+  --event-sheet-events-highlighted-background-color: #3d4d51;
+  --event-sheet-events-highlighted-color: #E5C07B;
+  --event-sheet-actions-background-color: #282C34;
+  --event-sheet-actions-color: #D6DEEC;
+  --event-sheet-sub-instructions-border-color: #282C34;
+  --event-sheet-sub-instructions-border: 1px #282C34 solid;
+  --event-sheet-warning-instruction-background-color: rgba(255, 188, 87, 0.125); /* Palette/Yellow/40 and alpha */
+  --event-sheet-instruction-parameter-base-color: #98C379;
+  --event-sheet-instruction-parameter-number-color: #E5C07B;
+  --event-sheet-instruction-parameter-object-color: #C678DD;
+  --event-sheet-instruction-parameter-behavior-color: #E09563;
+  --event-sheet-instruction-parameter-operator-color: #B77CFF;
+  --event-sheet-instruction-parameter-var-color: #56B6C2;
+  --event-sheet-instruction-parameter-error-color: #E06C75;
+  --event-sheet-instruction-parameter-error-background-color: #E06C7544;
+  --event-sheet-instruction-parameter-warning-color: #E5C07B;
+  --event-sheet-drop-indicator-can-drop-border-top-color: #61AFEF;
+  --event-sheet-drop-indicator-cannot-drop-border-top-color: #E06C75;
+  --event-sheet-link-container-background-color: #3E4452;
+  --event-sheet-link-container-color: #D6DEEC;
+  --event-sheet-link-selectable-link-color: #C678DD;
+  --markdown-blockquote-border-left-color: rgba(221, 221, 221, 0.6);
+  --markdown-link-color: rgb(221, 221, 221);
+  --sound-player-play-button-primary-border-color: #C9B6FC;
+  --sound-player-play-button-primary-background-color: #C9B6FC;
+  --sound-player-play-button-primary-color: #1D1D26;
+  --sound-player-play-button-primary-hover-background-color: #F5F5F7;
+  --sound-player-play-button-primary-hover-border-color: #F5F5F7;
+  --sound-player-play-button-secondary-border-color: #C9B6FC;
+  --sound-player-play-button-secondary-background-color: #32323B;
+  --sound-player-play-button-secondary-color: #F5F5F7;
+  --sound-player-play-button-secondary-hover-background-color: #606066;
+  --sound-player-play-button-secondary-hover-border-color: #C9B6FC;
+  --sound-player-wave-color: #9979F1;
+  --sound-player-progress-color: #7046EC;
+  --mosaic-title-color: #FAFAFA; /* Palette/Grey/00 */
+  --mosaic-layout-border-color: #3E4452;
+  --mosaic-layout-background-color: #25252E; /* Palette/Grey/90 */
+  --mosaic-toolbar-background-color: #32323B; /* Palette/Grey/80 */
+  --mosaic-toolbar-border-color-hover: #D6DEEC;
+  --table-border-color: #282C34;
+  --table-text-color: #ABB2BF;
+  --table-text-color-header: #D6DEEC;
+  --table-row-odd-background-color: #282C34;
+  --table-row-even-background-color: #21252B;
+  --table-row-selected-background-color: #3E4452;
+  --table-row-selected-color: #D6DEEC;
+}

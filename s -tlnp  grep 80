@@ -1,0 +1,16 @@
+[0;1;31m×[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (]8;;file://tirskix.space/usr/lib/systemd/system/nginx.service/usr/lib/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Tue 2026-03-10 21:03:41 MSK; 801ms ago
+       Docs: ]8;;man:nginx(8)man:nginx(8)]8;;
+        CPU: 18ms
+
+Mar 10 21:03:38 tirskix.space systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Mar 10 21:03:38 tirskix.space nginx[3655193]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Mar 10 21:03:39 tirskix.space nginx[3655193]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Mar 10 21:03:39 tirskix.space nginx[3655193]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Mar 10 21:03:40 tirskix.space nginx[3655193]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Mar 10 21:03:40 tirskix.space nginx[3655193]: nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+Mar 10 21:03:41 tirskix.space nginx[3655193]: nginx: [emerg] still could not bind()
+Mar 10 21:03:41 tirskix.space systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+Mar 10 21:03:41 tirskix.space systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+Mar 10 21:03:41 tirskix.space systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start nginx.service - A high performance web server and a reverse proxy server.[0m
