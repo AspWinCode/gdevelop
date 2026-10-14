@@ -99,13 +99,21 @@ export const useSerializableObjectCancelableEditor = ({
         numberOfChangesRef.current >= changesBeforeShowingWarning;
 
       if (shouldShowWarning) {
-        const answer = await showConfirmation({
-          title: t`Cancel your changes?`,
-          message: t`All your changes will be lost. Are you sure you want to cancel?`,
-          confirmButtonLabel: t`Cancel`,
-          dismissButtonLabel: t`Continue editing`,
-        });
-        if (answer) continueCanceling = true;
+        try {
+          const answer = await showConfirmation({
+            title: t`Cancel your changes?`,
+            message: t`All your changes will be lost. Are you sure you want to cancel?`,
+            confirmButtonLabel: t`Cancel`,
+            dismissButtonLabel: t`Continue editing`,
+          });
+          if (answer) continueCanceling = true;
+        } catch (error) {
+          // If the confirmation dialog itself fails to show/resolve, don't
+          // leave the editor stuck with the X/Cancel button appearing to do
+          // nothing - fall back to closing, same as if there was nothing to confirm.
+          console.error('Error while showing the cancel confirmation:', error);
+          continueCanceling = true;
+        }
       } else {
         continueCanceling = true;
       }
@@ -244,13 +252,18 @@ export const useSerializableObjectsCancelableEditor = ({
         numberOfChangesRef.current >= changesBeforeShowingWarning;
 
       if (shouldShowWarning) {
-        const answer = await showConfirmation({
-          title: t`Cancel your changes?`,
-          message: t`All your changes will be lost. Are you sure you want to cancel?`,
-          confirmButtonLabel: t`Cancel`,
-          dismissButtonLabel: t`Continue editing`,
-        });
-        if (answer) continueCanceling = true;
+        try {
+          const answer = await showConfirmation({
+            title: t`Cancel your changes?`,
+            message: t`All your changes will be lost. Are you sure you want to cancel?`,
+            confirmButtonLabel: t`Cancel`,
+            dismissButtonLabel: t`Continue editing`,
+          });
+          if (answer) continueCanceling = true;
+        } catch (error) {
+          console.error('Error while showing the cancel confirmation:', error);
+          continueCanceling = true;
+        }
       } else {
         continueCanceling = true;
       }

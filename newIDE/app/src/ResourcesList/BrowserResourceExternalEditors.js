@@ -167,7 +167,16 @@ export const downloadAndPrepareExternalEditorBase64Resources = async ({
     if (!resourcesManager.hasResource(resourceName)) return;
 
     const resource = resourcesManager.getResource(resourceName);
-    const url = resource.getFile();
+    const file = resource.getFile();
+    // This self-hosted setup stores uploaded resources as root-relative
+    // paths (e.g. "/gdevelop-resources/files/xxx.png"), which isURL()
+    // doesn't recognize as fetchable. Resolve them against the current
+    // origin first so they're downloaded instead of silently skipped
+    // (which was causing Piskel to open with a blank/empty sprite).
+    const url =
+      file.startsWith('/') && typeof window !== 'undefined'
+        ? `${window.location.origin}${file}`
+        : file;
     if (isURL(url)) {
       if (isBlobURL(url)) {
         console.error('Unsupported blob URL for a resource - ignoring it.');
@@ -300,32 +309,6 @@ const editWithBrowserExternalEditor = async ({
 
   // Self-hosted: upload any remaining blob URL resources to the resource server
   // before freeing them (needed when cloud upload is not available).
-  await Promise.all(
-    modifiedResources.map(async ({ resource, blobUrl }) => {
-      if (!blobUrl) return;
-      const currentFile = resource.getFile();
-      if (!currentFile || !currentFile.startsWith('blob:')) return;
-      try {
-        const blob = await fetch(blobUrl).then(r => r.blob());
-        const formData = new FormData();
-        const name = resource.getName();
-        const filename = /\.(png|jpg|gif|jpeg|webp)$/i.test(name) ? name : name + '.png';
-        formData.append('files', new File([blob], filename, { type: blob.type || 'image/png' }));
-        const resp = await fetch('/gdevelop-resources/upload', { method: 'POST', body: formData });
-        if (resp.ok) {
-          const data = await resp.json();
-          if (data.files && data.files[0]) {
-            resource.setFile(data.files[0].url);
-            console.info('Uploaded resource to server:', data.files[0].url);
-          }
-        }
-      } catch (err) {
-        console.warn('Could not upload resource blob to server:', err);
-      }
-    })
-  );
-
-  // Self-hosted: upload blobs to /gdevelop-resources/upload before freeing them
   await Promise.all(
     modifiedResources.map(async ({ resource, blobUrl }) => {
       if (!blobUrl) return;

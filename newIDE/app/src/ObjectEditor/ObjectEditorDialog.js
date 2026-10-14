@@ -160,6 +160,21 @@ const InnerDialog = (props: InnerDialogProps) => {
     props.editorComponent;
 
   const onApply = async () => {
+    // Rename first, unconditionally: the parent (e.g. SceneEditor) may reset
+    // the "currently edited object" state as a result of props.onApply below,
+    // and the rename handler reads that state. Firing the rename after that
+    // point - or after an early return below - silently drops it, which was
+    // the cause of "renaming from inside the dialog doesn't save". The actual
+    // object variables refactoring further down doesn't depend on the name
+    // having been applied yet, so this ordering is safe.
+    if (objectName !== object.getName()) {
+      try {
+        onRename(objectName);
+      } catch (error) {
+        console.error('Error while renaming the object:', error);
+      }
+    }
+
     props.onApply(hasResourceChanged, hasAnyEffectBeenAdded);
 
     const initialInstances =
@@ -194,11 +209,6 @@ const InnerDialog = (props: InnerDialogProps) => {
       );
     }
     object.clearPersistentUuid();
-
-    // Do the renaming *after* applying changes, as "withSerializableObject"
-    // HOC will unserialize the object to apply modifications, which will
-    // override the name.
-    onRename(objectName);
   };
 
   const { DismissableTutorialMessage } = useDismissableTutorialMessage(
