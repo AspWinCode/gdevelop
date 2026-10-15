@@ -119,17 +119,24 @@ export const useSerializableObjectCancelableEditor = ({
       }
       if (!continueCanceling) return;
 
-      if (!useProjectToUnserialize) {
-        serializableObject.unserializeFrom(serializedElement);
-      } else {
-        serializableObject.unserializeFrom(
-          useProjectToUnserialize,
-          serializedElement
-        );
-      }
+      try {
+        if (!useProjectToUnserialize) {
+          serializableObject.unserializeFrom(serializedElement);
+        } else {
+          serializableObject.unserializeFrom(
+            useProjectToUnserialize,
+            serializedElement
+          );
+        }
 
-      if (resetThenClearPersistentUuid)
-        serializableObject.clearPersistentUuid();
+        if (resetThenClearPersistentUuid)
+          serializableObject.clearPersistentUuid();
+      } catch (error) {
+        // Don't let a failure while reverting changes (e.g. a binding
+        // mismatch) leave the X/Cancel button appearing to do nothing -
+        // the dialog should still close even if the revert was incomplete.
+        console.error('Error while cancelling changes:', error);
+      }
 
       onCancel();
     },
@@ -269,21 +276,25 @@ export const useSerializableObjectsCancelableEditor = ({
       }
       if (!continueCanceling) return;
 
-      for (const [id, serializableObject] of serializableObjects) {
-        const serializedElement = serializedElements.get(id);
+      try {
+        for (const [id, serializableObject] of serializableObjects) {
+          const serializedElement = serializedElements.get(id);
 
-        if (useProjectToUnserialize) {
-          serializableObject.unserializeFrom(
-            useProjectToUnserialize,
-            serializedElement
-          );
-        } else {
-          serializableObject.unserializeFrom(serializedElement);
-        }
+          if (useProjectToUnserialize) {
+            serializableObject.unserializeFrom(
+              useProjectToUnserialize,
+              serializedElement
+            );
+          } else {
+            serializableObject.unserializeFrom(serializedElement);
+          }
 
-        if (resetThenClearPersistentUuid) {
-          serializableObject.clearPersistentUuid();
+          if (resetThenClearPersistentUuid) {
+            serializableObject.clearPersistentUuid();
+          }
         }
+      } catch (error) {
+        console.error('Error while cancelling changes:', error);
       }
 
       onCancel();
